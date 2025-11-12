@@ -48,7 +48,7 @@ solar-challenge-week0/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-```bash
+```
 ## Key Features
 
 | Feature | Description |
