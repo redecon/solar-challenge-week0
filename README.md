@@ -15,25 +15,40 @@ This repository contains a **reproducible data science pipeline** for analyzing 
 
 ---
 
-## Repository Structure
-solar-challenge-week0/
-├── data/                     # Raw + cleaned CSVs (gitignored)
-├── notebooks/                # Jupyter EDA notebooks
-│   ├── benin_eda.ipynb
-│   ├── togo_eda.ipynb
-│   └── sierraleone_eda.ipynb
-├── src/                      # Python scripts (future modeling)
-├── tests/                    # Pytest suite
-├── figures/                  # Saved plots (gitignored)
-├── .github/
-│   └── workflows/ci.yml      # GitHub Actions CI
-├── requirements.txt          # Python dependencies
-├── .gitignore
-└── README.md
-
+# Solar Challenge Week 0 – Multi-Country Solar Analysis  
+**Profiling • Cleaning • EDA • Cross-Country Comparison • Interactive Dashboard**
 
 ---
 
+## Project Overview
+
+Analyze solar irradiance from **Benin**, **Togo**, and **Sierra Leone** to assess solar potential.
+
+**Tasks**:
+- Data cleaning & EDA
+- Cross-country comparison
+- Interactive Streamlit dashboard
+
+---
+
+## Repository Structure
+
+```bash
+solar-challenge-week0/
+├── data/                     # Raw + cleaned CSVs (.gitignore)
+├── notebooks/                # EDA + comparison
+│   ├── benin_eda.ipynb
+│   ├── togo_eda.ipynb
+│   ├── sierraleone_eda.ipynb
+│   └── compare_countries.ipynb
+├── app/                      # Streamlit dashboard
+│   ├── main.py
+│   └── utils.py
+├── .github/workflows/ci.yml  # CI/CD
+├── requirements.txt
+├── .gitignore
+└── README.md
+```bash
 ## Key Features
 
 | Feature | Description |
@@ -66,8 +81,10 @@ pip install -r requirements.txt
 
 # 4. Launch Jupyter
 jupyter notebook
-```
 
+# 5. Run Dashboard
+streamlit run app/main.py
+```
 ## EDA Notebooks
 Each notebook performs:
 
